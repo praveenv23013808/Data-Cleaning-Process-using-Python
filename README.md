@@ -24,9 +24,11 @@ STEP 6: Use zscore of to remove outliers
            ## Developed By: JAYAVARTHAN P
            ## Reg No: 212222100015
 # 1) Read and display DataFrame
+```
 import pandas as pd
 df=pd.read_csv('/content/SAMPLEDS.csv')
 df
+```
 ## OUTPUT:
 ![Screenshot 2024-02-26 143647](https://github.com/JAYAVARTHAN-P/Data-Cleaning-Process-using-Python/assets/121369281/6d585473-bb87-4a5e-a0e4-a00f7d287482)
 
@@ -35,7 +37,9 @@ df
 
 
 ## 2) Display head
+```
 df.head()
+```
 ## OUTPUT:
 ![Screenshot 2024-02-26 143739](https://github.com/JAYAVARTHAN-P/Data-Cleaning-Process-using-Python/assets/121369281/00280d95-d899-44ea-a43d-8f3c1ba50d19)
 
