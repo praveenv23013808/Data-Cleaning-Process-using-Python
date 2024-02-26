@@ -27,67 +27,73 @@ STEP 6: Use zscore of to remove outliers
 import pandas as pd
 df=pd.read_csv('/content/SAMPLEDS.csv')
 df
-OUTPUT:
+## OUTPUT:
+![Screenshot 2024-02-26 143647](https://github.com/JAYAVARTHAN-P/Data-Cleaning-Process-using-Python/assets/121369281/6d585473-bb87-4a5e-a0e4-a00f7d287482)
+
 
 
 
 
 ## 2) Display head
 df.head()
-OUTPUT:
-image
+## OUTPUT:
+![Screenshot 2024-02-26 143739](https://github.com/JAYAVARTHAN-P/Data-Cleaning-Process-using-Python/assets/121369281/00280d95-d899-44ea-a43d-8f3c1ba50d19)
+
 
 ## 3) Display tail
 df.tail()
-OUTPUT:
-image
+## OUTPUT:
+![Screenshot 2024-02-26 143758](https://github.com/JAYAVARTHAN-P/Data-Cleaning-Process-using-Python/assets/121369281/127e5c86-a0d6-4ecf-a895-5207e98e9c93)
+
 
 ## 4) Info of datafram
 df.info()
-OUTPUT:
-image
+## OUTPUT:
+![Screenshot 2024-02-26 143836](https://github.com/JAYAVARTHAN-P/Data-Cleaning-Process-using-Python/assets/121369281/4bd46759-26b5-4554-957c-c54ae4a1c4ab)
+
 
 ## 5) Describe about the dataframe
 df.describe()
-OUTPUT:
-image
+## OUTPUT:
+![Screenshot 2024-02-26 143949](https://github.com/JAYAVARTHAN-P/Data-Cleaning-Process-using-Python/assets/121369281/624bdc76-b568-4450-aa4e-8dcc5917fb9b)
+
 
 ## 6) Shape of the datafram
 df.shape
-OUTPUT:
+## OUTPUT:
 image
 
 ## 7) Checking tha NUll values
 df.isnull().sum()
-OUTPUT:
+## OUTPUT:
 image
 
 ## 8) Drop the Null values
 x=df.dropna(how='any')
 x
-OUTPUT:
+## OUTPUT:
 image
 
 ## 9) Drop the Null values in Total
 tot=df.dropna(subset=['TOTAL'],how='any')
 tot
-OUTPUT:
+## OUTPUT:
 image
 
 ## 10) FIll the Null values
 df.fillna(0)
-OUTPUT:
+## OUTPUT:
 image
 
 ## 11) Finding the mean value
 mn=df.TOTAL.mean()
 mn
-OUTPUT:
+## OUTPUT:
 image
 
 ## 12) Fill Null value with Mean value
 df.head()
-OUTPUT:
+## OUTPUT:
 Screenshot 2024-02-23 090324
 
 ## 13) Final output
@@ -95,7 +101,7 @@ for x in df.index:
   if df.loc[x,"AVG"]>100:
     df.drop(x,inplace=True)
 df
-OUTPUT:
+## OUTPUT:
 image
 
 ## 14)Cut and paste portion of image
@@ -107,11 +113,9 @@ image
      cv2.imshow('partimage1',image)
      cv2.waitKey(0)
      cv2.destroyAllWindows()
-OUTPUT:
 
 
-Result
+
+## Result
       <<include your Result here>>
 
-# Result
-          <<include your Result here>>
