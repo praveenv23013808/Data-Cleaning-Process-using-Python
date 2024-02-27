@@ -257,4 +257,4 @@ df
 </table>
  
 # Result
-          <<include your Result here>>
+The data clearning has beeen done successfully.
